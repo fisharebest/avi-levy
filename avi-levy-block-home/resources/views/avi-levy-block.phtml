@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @var string $avi_url
+ * @var string $yacov_url
+ * @var string $shoshana_url
+ */
+
+?>
+
+<div class="d-flex justify-content-center align-items-center" style="font-size: 1.5rem; font-weight: bold;">
+    <div style="color: var(--link-color);">
+        &raquo;&nbsp;
+    </div>
+
+    <a href="<?= e($yacov_url) ?>" style="color:white; background: var(--link-color); border: solid white 0.25rem; border-radius: 0.5rem;" class="px-2">
+        Enter Levy
+    </a>
+
+    <div style=";width:480px; height:340px; background-image: url('/avi-levy-photo'); background-repeat:no-repeat; margin: 0 -1.75rem; z-index: 1;"></div>
+
+    <a href="<?= e($shoshana_url) ?>" style="color:white; background: #b11116; border: solid white 0.25rem; border-radius: 0.5rem;" class="px-2">
+        Enter Itygin
+    </a>
+
+    <div style="color: var(--link-color);">
+        &nbsp;&laquo;
+    </div>
+</div>
+
+<div style="width: 40rem; background-image: url('/avi-levy-text'); background-repeat: no-repeat; background-size: 100% 100%;" class="mx-auto p-5">
+    <div style="line-height: 1.2rem">
+        These are my parents: <a href="<?= e($yacov_url) ?>">Yacov Meir Levy</a> &amp;
+        <a href="<?= e($shoshana_url) ?>">Shoshana Itygin-Levy</a> who, individually,
+        came to a forsaken land with a burning desire to be a part of rebuilding the Jewish homeland.
+        <br>
+        This site is dedicated to them with the hope that their great-grandchildren
+        and beyond will know where they came from.
+    </div>
+
+    <div class="text-end">
+        <a href="<?= e($avi_url) ?>">Avinoam</a>
+    </div>
+</div>

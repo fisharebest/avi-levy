@@ -1,0 +1,46 @@
+:root {
+    --chart-line-radius: 0.25rem;
+    --chart-line: solid #81a9cb 2px;
+    --sex-m-bg: #89e5fb;
+    --sex-m-fg: #ffde9b;
+    --link-color-hover: #00f;
+    --link-color: #b11116;
+}
+
+body.wt-theme-_avi-levy-theme_ {
+    background-image: url('/avi-levy/background');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.icon-silhouette {
+    width: 37px;
+    height: 50px;
+}
+
+.wt-individual-silhouette-f,
+.icon-silhouette-f {
+    content: url('/avi-levy/silhouette-f');
+}
+
+.wt-individual-silhouette-m,
+.icon-silhouette-m {
+    content: url('/avi-levy/silhouette-m');
+}
+
+.wt-individual-silhouette-u,
+.wt-individual-silhouette-x,
+.icon-silhouette-u,
+.icon-silhouette-x {
+    content: url('/avi-levy/silhouette-u');
+}
+
+[dir] .wt-facts-table th {
+    color: #000;
+    background-color: #ffde9b;
+}
+
+ a {
+    color: var(--link-color);
+}
