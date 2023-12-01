@@ -41,13 +41,7 @@ return new class (new PedigreeChartModule(new ChartService()))
     #[Override]
     public function title(): string
     {
-        return 'Avi Levy';
-    }
-
-    #[Override]
-    public function description(): string
-    {
-        return 'Home page block for Avi Levy';
+        return 'Avi Levy - Block - Home page';
     }
 
     #[Override]

@@ -35,12 +35,6 @@ return new class ()
     }
 
     #[Override]
-    public function description(): string
-    {
-        return 'Modifications for Avi Levy - add an about menu item and page';
-    }
-
-    #[Override]
     public function resourcesFolder(): string
     {
         return __DIR__ . '/resources/';
