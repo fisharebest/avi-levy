@@ -39,7 +39,7 @@ return new class (new UserService()) extends AbstractModule implements ModuleFoo
             $users = $this->user_service->allLoggedIn();
             $label = I18N::translate(message: 'Who is online') . ':';
             $count = I18N::plural('%s signed-in user', '%s signed-in users', $users->count(), I18N::number(n: $users->count()));
-            $list  = $users->map(callback: static fn(User $user): string => ' | ' . e(value: $user->realName()) . ' - ' . e(value: $user->userName()));
+            $list  = $users->map(callback: static fn (User $user): string => ' | ' . e(value: $user->realName()) . ' - ' . e(value: $user->userName()));
 
             return '<div class="wt-footer text-center my-2"><b>' . $label . '</b> ' . $count . ' ' . $list->implode(value: '') . '</div>';
         }
