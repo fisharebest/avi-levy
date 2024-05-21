@@ -49,12 +49,12 @@ return new class ()
     }
 
     #[Override]
-    public function getMenu(Tree $tree): ?Menu
+    public function getMenu(Tree $tree): Menu|null
     {
         $label = I18N::translate('About');
         $link  = route(route_name: self::class, parameters: ['tree' => $tree->name()]);
 
-        return new Menu(label: $label, link: $link);
+        return new Menu(label: $label, link: $link, class: 'menu-faq');
     }
 
     #[Override]
