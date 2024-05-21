@@ -44,3 +44,7 @@ body.wt-theme-_avi-levy-theme_ {
  a {
     color: var(--link-color);
 }
+
+ .wt-genealogy-menu a {
+     font-weight: bold;
+ }
